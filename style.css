@@ -1,0 +1,391 @@
+/*
+CSS Starter Template 1.0
+Author: Marco Sassanelli Garcia
+
+---------------- 1 / BASIC SETTINGS ----------------
+1. Basic Settings
+
+
+---------------- 2 / BASIC THEME DESIGN COMPONTENTS---------------
+2. Container
+3. Background
+4. Font-Color
+5. Paddings
+6. Margins
+7. Grid
+8. Flex
+
+---------------- 3 / THEME SPECIFIC COMPONTENTS    ----------------
+9. Header 
+10. Navigation
+11.
+
+---------------- 4 / SITE SPECIFIC COMPONTENTS    ----------------
+.  
+. 
+.
+
+*/
+
+
+/*
+                        /-/
+                       / /
+                      / /       1 / BASIC SETTINGS
+                     / /
+                    /-/
+
+*/
+
+/* -----------------------------------------------------------------------------------------------
+1. Basic Settings
+------------------------------------------------------------------------------------------------- */
+
+
+:root {
+    --dark-color: #6d7470;
+    --light-color: #fffff6;
+    --accent1-color: #8cad86;
+    --accent2-color: #ffa97b;
+
+    --serif: 'Pherome',serif;
+    --sans-serif: 'Open Sans',sans-serif;
+
+}
+
+*, 
+*::before, 
+*::after 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--sans-serif);
+    overflow-x: hidden;
+    font-size: 1.8vh;
+}
+ul, li {
+    list-style-type: None;
+}
+
+a {
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+/*
+                        /-/
+                       / /
+                      / /       2 / BASIC THEME DESIGN COMPONTENTS
+                     / /
+                    /-/
+
+*/
+
+
+/*-----------------------------------------------------------------------------------------------
+2. Container
+-------------------------------------------------------------------------------------------------*/
+
+.container {
+    color: var(--light-color);
+}
+
+.container-1 {
+    background: var(--light-color);
+    min-height: calc(100vh / 5);
+}
+.container-2 {
+    background: var(--dark-color);
+    min-height: calc(calc(100vh / 5) * 2);  
+}
+.container-3 {
+    background: var(--accent1-color);
+    min-height: calc(calc(100vh / 5) * 3);  
+}
+.container-4 {   
+    min-height: calc(calc(100vh / 5) * 4);  
+}
+.container-5 {   
+    min-height: calc(calc(100vh / 5) * 5);  
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------
+2. Background
+-------------------------------------------------------------------------------------------------*/
+
+.bg-dark {
+    background: var(--dark-color);
+}
+.bg-light {
+    background: var(--light-color);
+}
+.bg-accent1 {
+    background: var(--accent1-color);
+}
+.bg-accent2 {
+    background: var(--accent2-color);
+}
+
+/*-----------------------------------------------------------------------------------------------
+3. Font Colors
+-------------------------------------------------------------------------------------------------*/
+
+.dark {
+    color: var(--dark-color);
+}
+.light {
+    color: var(--light-color);
+}
+.accent1 {
+    color: var(--accent1-color);
+}
+.accent2 {
+    color: var(--accent2-color);
+}
+
+/*-----------------------------------------------------------------------------------------------
+4. Font Styling
+-------------------------------------------------------------------------------------------------*/
+
+
+.serif {
+    font-family: var(--serif);
+}
+.sans-serif {
+    font-family: var(--sans-serif);
+}
+
+
+/*-----------------------------------------------------------------------------------------------
+5. Font Sizes
+-------------------------------------------------------------------------------------------------*/
+
+h1 {
+    font-size: calc(1.8vh * 6);
+}
+h2 {
+    font-size: calc(1.8vh * 5);
+}
+h3 {
+    font-size: calc(1.8vh * 4);
+}
+h4 {
+    font-size: calc(1.8vh * 3);
+}
+h5 {
+    font-size: calc(1.8vh * 2);
+}
+h6 {
+    font-size: 1.8vh;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------
+6. Paddings
+-------------------------------------------------------------------------------------------------*/
+.padding-0 {
+    padding: .5rem;
+}
+.padding-1 {
+    padding: 1rem;
+}
+.padding-2 {
+    padding: 2rem;
+}
+.padding-3 {
+    padding: 4rem;
+}
+.padding-4 {
+    padding: 6rem;
+}
+.padding-top {
+    padding-top: 1rem;
+}
+.padding-right {
+    padding-right: 1rem;
+}
+.padding-bottom {
+    padding-bottom: 1rem;
+}
+.padding-left {
+    padding-left: 1rem;
+}
+
+/*-----------------------------------------------------------------------------------------------
+7. Margins
+-------------------------------------------------------------------------------------------------*/
+
+.margin-1 {
+    margin: 1rem;
+}
+.margin-2 {
+    margin: 2rem;
+}
+.margin-3 {
+    margin: 4rem;
+}
+.margin-4 {
+    margin: 6rem;
+}
+.margin-top {
+    margin-top: 1rem;
+}
+.margin-top-2 {
+    margin-top: 2rem;
+}
+.left-right {
+    margin-right: 1rem;
+}
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+.margin-bottom-2 {
+    margin-bottom: 2rem;
+}
+.left-left {
+    margin-left: 1rem;
+}
+/*-----------------------------------------------------------------------------------------------
+8. Grids
+-------------------------------------------------------------------------------------------------*/
+
+.grid-2-h {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area: 
+    ""
+    "";
+}
+
+/*-----------------------------------------------------------------------------------------------
+9. Flex
+-------------------------------------------------------------------------------------------------*/
+
+.flex {
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+.flex-justify-space-between {
+    justify-content: space-between;
+}
+.flex-justify-space-around {
+    justify-content: space-around;
+}
+.flex-alignItems-center {
+    align-items: center;
+}
+
+
+/*
+                        /-/
+                       / /
+                      / /       3 / THEME SPECIFIC COMPONTENTS
+                     / /
+                    /-/
+
+*/
+
+/*-----------------------------------------------------------------------------------------------
+Buttons
+-------------------------------------------------------------------------------------------------*/
+
+.btn-primary {
+    color: var(--dark-color);
+    background-color: var(--accent2-color);
+    border: none;
+}
+.btn-secondary {
+    color: var(--accent2-color);
+    background: transparent;
+    border: solid 2px var(--accent2-color);
+}
+.btn-primary, .btn-secondary {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/*-----------------------------------------------------------------------------------------------
+Navigation
+-------------------------------------------------------------------------------------------------*/
+
+.menu-icon{
+    cursor: pointer;
+    width: 2rem;
+    height: 100%;
+}
+.menubar {
+    position: relative;
+    content: '';
+    height: .1rem;
+    width: 2rem;
+    background: var(--accent2-color);
+    margin-top: .5rem;
+}
+:is(.menu-icon:focus,.menu-icon:hover) .menubar {
+    animation: menubar 1s .4s ease-in ;
+}
+@keyframes menubar {
+    0%{
+        transform: rotate(0);
+        margin-top: .5rem;
+    }
+    50% {
+        transform: rotate(45deg);
+        margin-top: 1rem;
+    }
+    100%{
+
+        margin-top: .5rem;
+    }
+}
+
+
+
+/*
+                        /-/
+                       / /
+                      / /       4 / SITE SPECIFIC COMPONTENTS
+                     / /
+                    /-/
+
+*/
+.product-content::before {
+    display: block;
+    height: 100vh;
+    content: '';
+    width: 100%;
+}
+
+.product-content {
+ /*   background: linear-gradient(0, rgba(109,116,112,0) 100%, rgba(109,116,112,1) 100%);*/
+    background: linear-gradient(0, rgb(109, 116, 112) 0%,  rgba(109, 116, 112, 0) 100%);
+    width: 100%;
+    position: relative;
+    top:  0;
+    min-height: 100vh;
+}
